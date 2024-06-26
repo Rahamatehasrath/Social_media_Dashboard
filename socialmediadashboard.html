@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="icon/x-icon" href="images/4.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="icon/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <span class="primary material-icons-sharp">
+                        layers
+                        </span>
+                    <h2>SOC<span class="primary">IAL</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Subscribers</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">dehaze</span>
+                    <h3>Leaderboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">forum</span>
+                    <h3>Forum</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">18</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">phone</span>
+                    <h3>Support</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3 onclick="logout()">Logout</h3>
+                </a>
+                <div>
+                    <button><a href="first page of social.html">Back</a></button>
+                </div>
+            </div>
+        </aside>
+        <main id="log">
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">facebook</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Facebook</h3>
+                            <h1>25L+</h1>
+                            <h6>subscribers</h6>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="expenses">
+                    <span class="material-icons-sharp"><i class="fa-brands fa-instagram"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Instagram</h3>
+                            <h1>14L+</h1>
+                            <h6>subscribers</h6>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="income">
+                    <span class="material-icons-sharp"><i class="fa-brands fa-twitter"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Twitter</h3>
+                            <h1>18L+</h1>
+                            <h6>Subscriptions</h6>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+            </div>
+            <div class="recent-orders">
+                <h2>Leader Boards</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>App Name</th>
+                            <th>App percentage</th>
+                            <th>Technology</th>
+                            <th>Website Visits</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>82%</td>
+                            <td>Advanced</td>
+                            <td class="warning">688</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Netflix</td>
+                            <td>78%</td>
+                            <td>Advanced</td>
+                            <td class="warning">532</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>62%</td>
+                            <td>Advanced</td>
+                            <td class="warning">434</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Snapchat</td>
+                            <td>54%</td>
+                            <td>Advanced</td>
+                            <td class="warning">398</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Twitter</td>
+                            <td>44%</td>
+                            <td>Advanced</td>
+                            <td class="warning">256</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="primary material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                
+            </div>
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="message">
+                            <p><b>Highlights</b> include reels for groups,expanded groups and admin features.</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="message">
+                            <p><b>Instagram</b> tests out location tags in notes.</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="message">
+                            <p><b>Twitter</b> announced today that they're launching notes,a new feature.</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-analytics">
+                <h2>Media Access Analytics</h2>
+                <h6>minimum and maximum access rates.</h6>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Facebook</h3>
+                            <small class="text-muted">Last month</small>
+                        </div>
+                        <h5 class="success">+53%</h5>
+                        <h3>+92%</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Instagram</h3>
+                            <small class="text-muted">Last month</small>
+                        </div>
+                        <h5 class="danger">+42%</h5>
+                        <h3>+85%</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Twitter</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+42%</h5>
+                        <h3>+84%</h3>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="myBtn" class="dropbtn">+ Add Application</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Netflix</a>
+                        <a href="#">Snapchat</a>
+                        <a href="#">Google</a>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById("myBtn").onclick=function() {fnctn()};
+                    function fnctn(){
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script src="social.js"></script>
+</body>
+
+</html>
